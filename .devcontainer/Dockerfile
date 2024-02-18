@@ -1,13 +1,11 @@
 # Environment for r programming
 # Version: 1.0
 
-# use the latest version of r-base
 FROM r-base:latest
 
-# install bash
-RUN apt-get update && apt-get install -y build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev
+RUN apt-get update && apt-get install -y build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev git
 
-# install r packages languageserver
+# install r packages
 RUN R -e "install.packages('languageserver', repos='http://cran.rstudio.com/')"
 RUN R -e "install.packages('ggplot2', repos='http://cran.rstudio.com/')"
 RUN R -e "install.packages('ggExtra', repos='http://cran.rstudio.com/')"

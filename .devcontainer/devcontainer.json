@@ -7,7 +7,16 @@
       "settings": {
         "editor.formatOnSave": true
       },
-      "extensions": ["reditorsupport.r", "rdebugger.r-debugger"]
+      "extensions": [
+        "reditorsupport.r",
+        "rdebugger.r-debugger",
+        "mhutchie.git-graph",
+        "waderyan.gitblame",
+        "donjayamanne.githistory",
+        "vivaxy.vscode-conventional-commits",
+        "gruntfuggly.todo-tree",
+        "ms-vscode-remote.remote-containers"
+      ]
     }
   }
 }
