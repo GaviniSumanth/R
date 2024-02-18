@@ -2,6 +2,10 @@
 {
   "name": "R",
   "dockerFile": "Dockerfile",
+  "postStartCommand": "Rscript app.R",
+  "appPort": [
+    "127.0.0.1:3000:3000"
+  ],
   "customizations": {
     "vscode": {
       "settings": {
