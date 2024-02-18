@@ -1,0 +1,13 @@
+// r-base container
+{
+  "name": "R",
+  "dockerFile": "Dockerfile",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true
+      },
+      "extensions": ["reditorsupport.r", "rdebugger.r-debugger"]
+    }
+  }
+}
